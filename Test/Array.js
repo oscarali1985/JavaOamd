@@ -35,6 +35,12 @@ console.log('leng'+fruits.length);
     console.log("Ordenado "+fruits); //[ 'Apple', 'Banana', 'Mango', 'Orange' ] 
     fruits.reverse();
     console.log("Ordenado inverso "+fruits); //[ 'Orange', 'Mango', 'Banana', 'Apple' ]
-    
+    //Elimina la ultima posision
+   
+    console.log(fruits.pop());
+    console.log(fruits);
+
+
     theLastOne=  (fruits[fruits.length-1]);
 console.log(theLastOne);
+

@@ -14,27 +14,22 @@ var caracter="";
             function leerletra(cadena,caracter){
 
                 for(i=0;i<cadena.length;i++){
-                    console.log(cadena.charAt(i));
-                    caracter=cadena.charAt(i);
-                    console.log("carac: "+caracter);
-                    contarletra(cadena,repeticion,caracter);
+                    console.log(cadena.charAt(i))
                         }
-                        
+                        caracter=cadena.charAt(i);
                         return caracter;
                 }
 
 
-            function contarletra(cadena,repeticion,caracter){
-                console.log("carac cl: "+caracter);
+            function contarletra(cadena,repeticion){
 
                 for(i=0;i<cadena.length;i++){
-                    if(cadena.charAt(i) == caracter){
+                    if(cadena.charAt(i) == "a"){
                     repeticion++;
                         }
-                        //console.log(repeticion);
                 }
                 
-               return repeticion;
+               return (repeticion);
                 
             }
             
@@ -44,8 +39,7 @@ var caracter="";
 
 
 leerletra(cadena);
-
-console.log(repeticion);
+console.log(contarletra(cadena,repeticion));
 
 
 
