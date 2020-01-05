@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>OAMD Excuse Generator</title>
+<LINK REL=StyleSheet HREF="index.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+
+  <h1>No me vas a creer pero</h1>
+  <h1 >
+    <script type="text/javascript">
+    var quien=["Mi perro ", "Mi hermana ", "El gobierno "];
+    var quehizo=["se comio ","se llevo ", "quito la luz "];
+    var aque=["la tarea ", "mi pc ", " "];
+    var cuando=["ayer", "desde el lunes", "ayer"];
+
+    function generateRandom(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+
+      var quepasara=generateRandom(1,3);
+      console.log (quien[quepasara]+quehizo[quepasara]+aque[quepasara]+cuando[quepasara]);
+      console.log("y el afortunado es "+quepasara);
+      document.write( quien[quepasara]+quehizo[quepasara]+aque[quepasara]+cuando[quepasara]);
+      //alert("This is from JavaScript");
+    </script>
+  </h1>
+
+
+</body>
+</html>

@@ -42,7 +42,7 @@ var caracter="";
             
     
 
-
+contarletra("contarletra "+cadena);
 leerletra(cadena);
 
 console.log(repeticion);
