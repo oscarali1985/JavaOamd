@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>repl.it</title>
+
+<style>
+
+</style>
+</head>
+
+<body>
+    <body onload="loadfn();">
+        <h1 id="screen">Loading...</h1>
+        <button onclick="turnChanger();">Switch turn</button>
+    </body>
+
+
+<script >
+var currentUser = "Mario";
+
+function loadfn(){
+	document.getElementById('screen').innerHTML = "It's "+currentUser+"'s turn";
+}
+
+function turnChanger()
+{
+
+	if(currentUser=="Mario")
+	{
+		currentUser = "Juan";
+	}
+	else if(currentUser=="Juan")
+	{
+		currentUser = "Jhon";
+    }
+    else if (currentUser == "Jhon")
+	{
+		currentUser = "Mario";
+	}
+	
+	document.getElementById('screen').innerHTML = "It's "+currentUser+"'s turn";
+}
+    
+</script>
+</body>
+</html>
