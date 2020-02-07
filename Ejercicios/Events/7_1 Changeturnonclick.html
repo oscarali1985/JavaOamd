@@ -14,6 +14,8 @@
     <body onload="loadfn();">
         <h1 id="screen">Loading...</h1>
         <button onclick="turnChanger();">Switch turn</button>
+
+        <h2 id="info"> </h2>
     </body>
 
 
@@ -29,15 +31,21 @@ function turnChanger()
 
 	if(currentUser=="Mario")
 	{
-		currentUser = "Juan";
+        
+        currentUser = "Juan";
+        document.getElementById('info').innerHTML = "Soy "+currentUser+" un placer me gusta el futbol";
 	}
 	else if(currentUser=="Juan")
 	{
-		currentUser = "Jhon";
+        
+        currentUser = "Jhon";
+        document.getElementById('info').innerHTML = "Soy "+currentUser+" un placer me gusta Comer pizzas";
     }
     else if (currentUser == "Jhon")
 	{
-		currentUser = "Mario";
+        
+        currentUser = "Mario";
+        document.getElementById('info').innerHTML = "Soy "+currentUser+" un placer me gusta pasear en carro";
 	}
 	
 	document.getElementById('screen').innerHTML = "It's "+currentUser+"'s turn";
