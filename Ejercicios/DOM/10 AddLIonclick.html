@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>repl.it</title>
+
+<style>
+
+</style>
+</head>
+
+<body>
+    <input id="superDuperButton" type="button" value='Click me' />
+    <ul id="myList">
+        <li>First element</li>
+        <li>Second element</li>
+        <li>Third element</li>
+    </ul>
+
+
+<script >
+    var button = document.getElementById('superDuperButton');
+    button.addEventListener("click", function(){
+	
+    //your code here
+    var ul = document.getElementById("myList");
+    var li = document.createElement("li");
+    //var children = ul.children.length + 1
+    //li.setAttribute("id", "element"+children)
+    //li.appendChild(document.createTextNode("Element "+children));
+    li.setAttribute("id", "element")
+    li.appendChild(document.createTextNode("Forth Element"));
+    ul.appendChild(li)
+});
+</script>
+</body>
+</html>

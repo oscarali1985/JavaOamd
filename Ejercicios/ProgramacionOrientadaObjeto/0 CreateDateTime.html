@@ -15,14 +15,15 @@
 
 
 <script >
-    var begining = '<ul>';
-var liststring = `'<li>First Item</li>
-	<li>Second Item</li>
-	<li>Third Item</li>'`;
-var ending = '</ul>';
+    let d = new Date();
+var y = d.getFullYear();
+var day= d.getDate();
+let mont= d.getMonth();
 
+var dt = new Date( "December 25, 1995 23:15:00" );
 
-document.body.innerHTML = begining + liststring + ending;
+d =`Today is: ${mont}-${day}-${y}` 
+console.log(d);
 </script>
 </body>
 </html>

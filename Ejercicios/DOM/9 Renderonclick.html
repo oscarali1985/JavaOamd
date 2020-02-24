@@ -19,8 +19,15 @@
 button.addEventListener("click", function(){
 	
 	//your code here
-	    var mydiv = document.getElementById('superDuperButton');
-      mydiv.child().style.background = "yellow";
+    var newDiv = document.createElement("div"); 
+  var newContent = document.createTextNode("Hola! Mundo"); 
+  newDiv.appendChild(newContent); //añade texto al div creado.
+  //newContent.style.background = "yellow"; 
+
+  // añade el elemento creado y su contenido al DOM 
+  var currentDiv = document.getElementById("div1"); 
+  document.body.insertBefore(newDiv, currentDiv);
+  newDiv.style.background = "yellow";
 	
 });
 </script>
