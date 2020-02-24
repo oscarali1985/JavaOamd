@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>repl.it</title>
+
+<style>
+
+</style>
+</head>
+
+<body onload="loadListener()"> 
+
+
+
+<script >
+    function loadListener(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+    xhttp.send();
+    fetch("https://jsonplaceholder.typicode.com/posts")
+        .then(resp => {
+            if(resp.code === 200) return resp.json()
+            if(resp.code === 403) return resp.json()
+            if(resp.code === 401) return resp.json()
+            if(resp.code === 500) return resp.json()
+            if(resp.code === 404) return resp.json()
+        
+            console.error('error!!');
+        })
+        .then(obj => {
+            // javascript
+            xhttp.onload=function(){
+            if(resp.json()===200){
+                const respuesta=JSON.parse(this.responseText);
+                console.log(respuesta);
+
+                let contenido='';
+                respuesta.forEach(function(post){
+                    contenido+=`
+                    <h3>${get.title}</h3>
+                    <p>${get.body}</p>
+                `;
+                });
+                console.log(contenido);
+            }
+            
+        }
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    }    
+    
+
+</script>
+</body>
+</html>
